@@ -1,5 +1,5 @@
 # Privacy Policy for Nutrition Mate
-**Effective Date:** 2025  
+**Effective Date:** December 15, 2025  
 **Developer:** CG Software Solutions LLC  
 
 Nutrition Mate ("the App," "we," "our," or "us") is a mobile application designed to assist users with nutritional tracking and related features. We are committed to protecting your privacy and ensuring that any data collected is handled responsibly and transparently. This Privacy Policy explains what information the App collects, how it is used, how it is stored, and the rights available to users.
@@ -8,11 +8,22 @@ By using Nutrition Mate, you consent to the practices described in this Privacy 
 
 ---
 
+## Scope of Application and Content Disclaimer
+Nutrition Mate provides general nutrition and fitness estimates intended for **generally healthy adults**. The App does **not** provide medical advice, diagnosis, or treatment and is not intended for use by children, pregnant or nursing individuals, or people with medical conditions unless advised by a qualified healthcare professional.
+
+All calculations, estimates, and nutritional targets provided by the App are **educational and informational only**. Individual needs may vary based on personal health factors, and users should consult a healthcare professional before making significant dietary or fitness changes.
+
+Nutrition Mate does not collect or process medical data and does not integrate with Apple HealthKit or other medical systems.
+
+---
+
 ## 1. Information We Collect
 Nutrition Mate collects only the minimum data necessary to operate its features, improve performance, ensure stability, and serve non-personalized advertisements. We do **not** collect personally identifiable information such as your name, email address, phone number, or physical address.
 
 ### 1.1 Data You Enter Into the App (Stored Locally Only)
 Nutrition and meal-related data (such as daily calorie intake, bucketed calorie values, and meal actions) are stored **locally on your device** using secure on-device key-value storage appropriate to the platform. This data is never transmitted to our servers or shared with third parties.
+
+**These values represent user-entered estimates and app-generated calculations, not medical or clinical records.**
 
 **Exception:** Privacy consent preferences are stored both locally (for offline functionality) and in Firebase Firestore (linked to your anonymous UID) to ensure consent choices persist and can be synchronized across app reinstalls. No nutrition, meal, or tracking data is ever stored in Firestore. Only user consent records and non-personal configuration data are associated with the anonymous UID.
 
@@ -117,6 +128,7 @@ Nutrition Mate does **not** collect or store:
 - Names, email addresses, phone numbers, or contact information  
 - Location data (precise or coarse)  
 - HealthKit, fitness, or medical data  
+- Medical records, diagnoses, or treatment plans  
 - Financial information  
 - Photos, videos, or audio  
 - Contacts or address book  
@@ -141,16 +153,16 @@ We do **not** sell or trade any data.
 
 ## 4. Third-Party Service Providers
 
-### **Firebase Analytics**
+### Firebase Analytics
 Processes aggregated usage data to understand feature performance and engagement trends.
 
-### **Firebase Crashlytics**
+### Firebase Crashlytics
 Processes anonymized crash reports and diagnostics.
 
-### **Firebase Anonymous Auth**
+### Firebase Anonymous Auth
 Enables secure, anonymous storage of consent records and internal preferences.
 
-### **Google AdMob**
+### Google AdMob
 Serves contextual advertisements. Operates in non-personalized mode and does not use IDFA or perform tracking.
 
 No other third-party SDKs collect data from the App.
@@ -189,7 +201,7 @@ You may:
 - Delete the App to remove all locally stored data  
 - Contact us regarding privacy questions  
 
-Because Firebase anonymous identifiers cannot be linked to an individual without external data (which we do not collect), deletion requests regarding persistent identifiers may not be actionable.
+Nutrition Mate does not maintain user accounts or identifiable health records; therefore, all nutrition data control remains entirely on the user’s device.
 
 ---
 
