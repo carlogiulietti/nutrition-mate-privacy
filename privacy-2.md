@@ -282,7 +282,7 @@ Continued use of the App after updates constitutes acceptance of the revised pol
 For privacy-related inquiries, please contact:
 
 **CG Software Solutions LLC**  
-Email: cgsoftwaresolutionsllc@gmail.com
+Email: info@cgsoftwaresolutions.org
 
 ---
 
