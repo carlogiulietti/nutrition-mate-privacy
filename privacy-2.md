@@ -263,6 +263,7 @@ You may:
 
 - Disable analytics within the App settings  
 - Delete the App to remove locally stored data  
+- Delete your account within the App to remove the authentication identifier and any developer-stored configuration data  
 - Contact us with privacy-related questions  
 
 Because nutrition data is stored locally on your device and not on developer servers, deleting the App will remove this data.
