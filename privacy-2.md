@@ -232,7 +232,7 @@ These providers may process limited device or usage data in accordance with thei
 - Crash diagnostics may be retained by Firebase Crashlytics for up to **90 days**.
 - Aggregated analytics data is retained according to **Google Analytics retention policies**.
 - Ad-related event data is retained according to **Google advertising data policies**.
-- The Apple authentication identifier persists until the App is uninstalled or account access is revoked.
+- The Apple authentication identifier and any developer-stored configuration data persist until the user deletes their account within the App or revokes account access. Once account deletion is requested, this data is removed from developer-controlled systems within a reasonable operational period.
 
 ---
 
@@ -263,7 +263,7 @@ You may:
 
 - Disable analytics within the App settings  
 - Delete the App to remove locally stored data  
-- Delete your account within the App to remove the authentication identifier and any developer-stored configuration or consent data associated with your account 
+- Delete your account within the App to remove the Apple authentication identifier and any minimal app configuration data stored by the developer  
 - Contact us with privacy-related questions  
 
 Because nutrition data is stored locally on your device and not on developer servers, deleting the App will remove this data.
