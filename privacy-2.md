@@ -33,29 +33,21 @@ The App allows users to create an account using:
 - **Sign in with Apple**, or  
 - **Email and password authentication**
 
-When using email authentication, the App collects:
-
-- Email address  
-- Authentication credentials (securely managed by our authentication provider)
-
-Email is used **only** for:
-
-- Account creation  
-- Authentication  
-- Account recovery (e.g., password reset)
+When you use email authentication, the App collects your **email address**. Authentication and credential management are handled by **Firebase Authentication (Google)**.
 
 Nutrition Mate:
 
-- Does **not** use email for marketing  
-- Does **not** sell or share email with advertisers  
-- Does **not** use email for tracking  
+- Uses your email **only for authentication and account access**
+- Does **not use email for marketing or promotional communications**
+- Does **not sell or share email with advertisers or third parties for advertising purposes**
+- Does **not use email for tracking or profiling**
 
-Authentication is handled securely by a third-party provider (e.g., Firebase Authentication). Passwords are not stored in plain text and are securely managed using industry-standard practices.
+Passwords are **not stored by the developer** and are securely managed by Firebase using industry-standard security practices.
 
 - **Collected:** Yes  
-- **Linked to identity:** Yes (for account functionality only)  
+- **Linked to you:** Yes (for account functionality only)  
 - **Used for tracking:** No  
-- **Shared:** With authentication provider only  
+- **Shared:** With Firebase Authentication (Google)  
 - **Purpose:** Account authentication and security  
 
 ---
@@ -66,12 +58,12 @@ When using **Sign in with Apple**, the App receives a **unique identifier** asso
 
 Nutrition Mate:
 
-- Does **not store your Apple email address**  
-- Does **not collect your name or personal contact information**  
-- Stores only the authentication identifier required for login  
+- Does **not store your Apple email address**
+- Does **not collect your name or personal contact information**
+- Stores only the authentication identifier required for login
 
 - **Collected:** Yes  
-- **Linked to identity:** No  
+- **Linked to you:** No (pseudonymous identifier only)  
 - **Used for tracking:** No  
 - **Shared:** No  
 - **Purpose:** Authentication  
@@ -82,7 +74,11 @@ Nutrition Mate:
 
 Nutrition data entered into the App — including food logs, calorie estimates, macronutrient tracking, body metrics, and dietary records — is stored **locally on your device only**.
 
-This information is **not transmitted to the developer's servers** and is **not accessible by the developer**.
+This information is:
+
+- Not transmitted to developer servers  
+- Not accessible by the developer  
+- Not linked to your account  
 
 Examples include:
 
@@ -108,11 +104,11 @@ These inputs are processed to generate estimated food identification and nutriti
 
 Nutrition Mate:
 
-- Does **not store images or food descriptions on developer servers**  
-- Uses them only for generating estimates  
-- Does not link this data to your identity  
+- Does **not store images or text inputs on developer servers**
+- Uses these inputs only to generate responses
+- Does not associate these inputs with your identity or account
 
-AI outputs are estimates and may be inaccurate.
+AI-generated outputs are **estimates and may be inaccurate**.
 
 ---
 
@@ -125,11 +121,15 @@ We use **Firebase Analytics** to collect aggregated usage data such as:
 - AI feature usage  
 - Ad display events  
 
-This data is:
+This data:
 
-- Aggregated  
-- Not linked to identifiable users  
-- Does not include nutrition details  
+- Is aggregated and de-identified  
+- Is not linked to your email or account  
+- Does not include nutrition details or personal attributes  
+
+- **Linked to you:** No  
+- **Shared:** With Firebase (Google)  
+- **Purpose:** Analytics and performance insights  
 
 ---
 
@@ -141,9 +141,10 @@ We use **Firebase Crashlytics** to collect:
 - Device information  
 - Performance metrics  
 
-This helps improve app stability.
+This information is used solely to improve app stability.
 
-- **Linked to identity:** No  
+- **Linked to you:** No  
+- **Shared:** With Firebase Crashlytics (Google)  
 - **Retention:** Up to 90 days  
 
 ---
@@ -153,21 +154,23 @@ This helps improve app stability.
 We may collect non-personal device information such as:
 
 - Device model  
-- OS version  
+- Operating system version  
 - App version  
 - Locale  
 
-Used for analytics and diagnostics only.
+Used only for diagnostics and analytics.
 
 ---
 
 ## 1.8 Advertising Data (Non-Personalized Ads Only)
 
-The App uses **Google AdMob** in non-personalized mode.
+The App uses **Google AdMob** in **non-personalized mode**.
 
-- No IDFA access  
+- No access to Apple IDFA  
 - No cross-app tracking  
 - No behavioral profiling  
+
+Ads are based only on contextual information.
 
 ---
 
@@ -179,9 +182,10 @@ Nutrition Mate does **not collect or store**:
 - Phone numbers  
 - Physical addresses  
 - Location data  
-- HealthKit or medical data  
+- Apple HealthKit data  
+- Medical records or diagnoses  
 - Financial information  
-- Contacts or address book  
+- Contacts or address books  
 - Browser or search history  
 
 Nutrition Mate also does **not store nutrition logs or dietary data on developer servers**.
@@ -198,7 +202,7 @@ We use collected data only to:
 - Analyze aggregated usage  
 - Serve non-personalized ads  
 
-We **do not sell or trade personal data**.
+We **do not sell, rent, or trade personal data**.
 
 ---
 
@@ -206,12 +210,12 @@ We **do not sell or trade personal data**.
 
 We use:
 
-- Firebase Authentication (account management)  
-- Firebase Analytics  
-- Firebase Crashlytics  
-- Google AdMob  
+- **Firebase Authentication (Google)** – account management  
+- **Firebase Analytics (Google)** – usage analytics  
+- **Firebase Crashlytics (Google)** – crash reporting  
+- **Google AdMob** – advertising  
 
-These providers process limited data under their own privacy policies.
+These providers process limited data in accordance with their own privacy policies.
 
 ---
 
@@ -226,17 +230,20 @@ These providers process limited data under their own privacy policies.
 
 # 6. Children's Privacy
 
-Not directed to children under 13.
+Nutrition Mate is **not directed to children under 13**.
 
 ---
 
 # 7. Security
 
-We implement:
+We implement industry-standard safeguards including:
 
-- Secure authentication (password hashing via provider)  
+- Secure authentication via Firebase Authentication  
 - Encrypted communications (HTTPS/TLS)  
 - Minimal data collection  
+- No storage of nutrition data on developer servers  
+
+However, no system is completely secure.
 
 ---
 
@@ -244,16 +251,16 @@ We implement:
 
 You may:
 
-- Disable analytics  
-- Delete the App to remove local data  
-- Delete your account within the App to remove email and authentication data  
-- Request account-related assistance  
+- Disable analytics within the App  
+- Delete the App to remove locally stored data  
+- Delete your account within the App to remove your email and authentication data  
+- Contact us with privacy-related questions  
 
 ---
 
 # 9. Changes to This Policy
 
-We may update this policy. Continued use = acceptance.
+We may update this policy from time to time. Continued use of the App constitutes acceptance of the updated policy.
 
 ---
 
