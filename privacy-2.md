@@ -1,5 +1,5 @@
 # Privacy Policy for Nutrition Mate
-**Effective Date:** March 10, 2026  
+**Effective Date:** April 21, 2026  
 **Developer:** CG Software Solutions LLC  
 
 Nutrition Mate ("the App," "we," "our," or "us") is a mobile application designed to assist users with nutritional tracking and related features. We are committed to protecting your privacy and ensuring that any data collected is handled responsibly and transparently.
