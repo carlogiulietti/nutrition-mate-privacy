@@ -24,47 +24,73 @@ Nutrition Mate does not collect or process medical records and does not integrat
 
 Nutrition Mate collects only the minimum information necessary to operate its features, improve performance, ensure stability, and serve non-personalized advertisements.
 
-We do **not collect personally identifiable information such as your name, email address, phone number, or physical address.**
-
 ---
 
-## 1.1 Authentication Identifier (Sign in with Apple)
+## 1.1 Account Information (Email Authentication)
 
-Access to certain features of the App requires authentication using **Sign in with Apple**.
+The App allows users to create an account using:
 
-When you sign in, the App receives a **unique identifier associated with your Apple account**. This identifier is used solely to enable authentication and account functionality within the App.
+- **Sign in with Apple**, or  
+- **Email and password authentication**
+
+When using email authentication, the App collects:
+
+- Email address  
+- Authentication credentials (securely managed by our authentication provider)
+
+Email is used **only** for:
+
+- Account creation  
+- Authentication  
+- Account recovery (e.g., password reset)
 
 Nutrition Mate:
 
-- **Does not collect or store your Apple email address**
-- **Does not collect your name or personal contact information**
-- Stores only the **non-personal Apple authentication identifier**
+- Does **not** use email for marketing  
+- Does **not** sell or share email with advertisers  
+- Does **not** use email for tracking  
 
-This identifier cannot be used by the developer to identify you personally.
+Authentication is handled securely by a third-party provider (e.g., Firebase Authentication). Passwords are not stored in plain text and are securely managed using industry-standard practices.
+
+- **Collected:** Yes  
+- **Linked to identity:** Yes (for account functionality only)  
+- **Used for tracking:** No  
+- **Shared:** With authentication provider only  
+- **Purpose:** Account authentication and security  
+
+---
+
+## 1.2 Authentication Identifier (Sign in with Apple)
+
+When using **Sign in with Apple**, the App receives a **unique identifier** associated with your Apple account.
+
+Nutrition Mate:
+
+- Does **not store your Apple email address**  
+- Does **not collect your name or personal contact information**  
+- Stores only the authentication identifier required for login  
 
 - **Collected:** Yes  
 - **Linked to identity:** No  
 - **Used for tracking:** No  
-- **Shared with third parties:** No  
-- **Purpose:** Authentication and account functionality  
+- **Shared:** No  
+- **Purpose:** Authentication  
 
 ---
 
-## 1.2 Data You Enter Into the App (Stored Locally Only)
+## 1.3 Data You Enter Into the App (Stored Locally Only)
 
 Nutrition data entered into the App — including food logs, calorie estimates, macronutrient tracking, body metrics, and dietary records — is stored **locally on your device only**.
 
 This information is **not transmitted to the developer's servers** and is **not accessible by the developer**.
 
-Examples of locally stored data include:
+Examples include:
 
 - Logged food items  
 - Daily calorie totals  
 - Macronutrient tracking  
 - Meal entries  
-- Body metrics entered by the user  
-
-These values represent **user-entered estimates and application-generated calculations**, not medical or clinical records.
+- Body metrics  
 
 Deleting the App or resetting your device may permanently remove this data.
 
@@ -72,106 +98,76 @@ Deleting the App or resetting your device may permanently remove this data.
 - **Shared:** No  
 - **Purpose:** App functionality  
 
-Your nutrition data never leaves your device.
-
 ---
 
-## 1.3 AI Food Recognition Inputs
+## 1.4 AI Food Recognition Inputs
 
-The App may allow users to log food items using **photographs or text descriptions** through artificial intelligence features.
+The App may allow users to log food using **photos or text descriptions**.
 
-Images or text entered for food recognition are processed only for the purpose of generating estimated food identification and nutritional information.
+These inputs are processed to generate estimated food identification and nutritional values.
 
-Nutrition Mate does **not store user-submitted food images, image data, or textual food descriptions on developer servers**.
+Nutrition Mate:
+
+- Does **not store images or food descriptions on developer servers**  
+- Uses them only for generating estimates  
+- Does not link this data to your identity  
 
 AI outputs are estimates and may be inaccurate.
 
-- **Linked to identity:** No  
-- **Shared:** No persistent storage by the developer  
-- **Purpose:** Generating estimated food identification and nutritional values  
-
 ---
 
-## 1.4 Analytics Data (Aggregated and De-Identified)
+## 1.5 Analytics Data (Aggregated and De-Identified)
 
 We use **Firebase Analytics** to collect aggregated usage data such as:
 
 - Screen views  
 - Feature usage  
-- Food logging interactions  
 - AI feature usage  
 - Ad display events  
 
-This information is automatically aggregated and **not linked to identifiable users**.
+This data is:
 
-Precise nutrition data, personal attributes, and identifiable information are not transmitted.
-
-- **Linked to identity:** No  
-- **Shared:** With Firebase (Google)  
-- **Purpose:** Analytics and performance insights  
+- Aggregated  
+- Not linked to identifiable users  
+- Does not include nutrition details  
 
 ---
 
-## 1.5 Crash and Performance Data
+## 1.6 Crash and Performance Data
 
-We use **Firebase Crashlytics** to collect crash reports and performance diagnostics which may include:
+We use **Firebase Crashlytics** to collect:
 
-- Device model  
-- Operating system version  
-- App version  
-- Stack traces  
+- Crash reports  
+- Device information  
 - Performance metrics  
 
-This information helps improve reliability and stability.
+This helps improve app stability.
 
 - **Linked to identity:** No  
-- **Shared:** With Firebase Crashlytics (Google)  
-- **Purpose:** Diagnostics and reliability  
 - **Retention:** Up to 90 days  
 
 ---
 
-## 1.6 Device Information
+## 1.7 Device Information
 
-Non-personal device information may be collected such as:
+We may collect non-personal device information such as:
 
 - Device model  
-- Operating system version  
-- Screen resolution  
+- OS version  
 - App version  
-- Country/locale  
+- Locale  
 
-This information supports diagnostics, analytics, and contextual advertising.
-
-- **Linked to identity:** No  
-- **Shared:** With Firebase and Google AdMob  
-- **Purpose:** Analytics, diagnostics, contextual advertising  
+Used for analytics and diagnostics only.
 
 ---
 
-## 1.7 Advertising Data (Non-Personalized Ads Only)
+## 1.8 Advertising Data (Non-Personalized Ads Only)
 
-The App displays advertisements using **Google AdMob** in **non-personalized mode**.
+The App uses **Google AdMob** in non-personalized mode.
 
-This means:
-
-- The App **does not request or access the Apple IDFA**
-- No cross-app tracking occurs
-- Ads are contextual only
-- No behavioral profiling is performed
-
-Data associated with ads may include:
-
-- Ad impressions  
-- Click events  
-- Device metadata  
-
-- **Linked to identity:** No  
-- **Used for tracking:** No  
-- **Shared:** With Google AdMob  
-- **Purpose:** Serving non-personalized advertisements  
-
-Because the App does not access the Apple advertising identifier (IDFA), the **App Tracking Transparency (ATT) prompt is not required**.
+- No IDFA access  
+- No cross-app tracking  
+- No behavioral profiling  
 
 ---
 
@@ -180,80 +176,67 @@ Because the App does not access the Apple advertising identifier (IDFA), the **A
 Nutrition Mate does **not collect or store**:
 
 - Names  
-- Email addresses  
 - Phone numbers  
 - Physical addresses  
-- Location data (precise or approximate)  
-- Apple HealthKit data  
-- Medical records or diagnoses  
-- Financial or payment information  
-- Contacts or address books  
+- Location data  
+- HealthKit or medical data  
+- Financial information  
+- Contacts or address book  
 - Browser or search history  
 
-Nutrition Mate also does **not store identifiable food logs or dietary histories on developer servers**.
+Nutrition Mate also does **not store nutrition logs or dietary data on developer servers**.
 
 ---
 
 # 3. How We Use Information
 
-Limited data collected by the App is used only to:
+We use collected data only to:
 
-- Provide core app functionality  
-- Enable authentication through Apple  
-- Improve app performance and reliability  
-- Analyze aggregated feature usage  
-- Serve non-personalized advertisements  
-- Maintain user consent settings  
+- Provide authentication and account access  
+- Enable core app functionality  
+- Improve performance and reliability  
+- Analyze aggregated usage  
+- Serve non-personalized ads  
 
-We **do not sell, rent, or trade personal data**.
+We **do not sell or trade personal data**.
 
 ---
 
 # 4. Third-Party Service Providers
 
-Nutrition Mate uses the following third-party services to operate certain features:
+We use:
 
-### Firebase Analytics
-Provides aggregated usage analytics.
+- Firebase Authentication (account management)  
+- Firebase Analytics  
+- Firebase Crashlytics  
+- Google AdMob  
 
-### Firebase Crashlytics
-Provides crash reporting and diagnostics.
-
-### Google AdMob
-Serves contextual advertisements.
-
-These providers may process limited device or usage data in accordance with their own privacy policies.
+These providers process limited data under their own privacy policies.
 
 ---
 
 # 5. Data Retention
 
-- Nutrition data stored locally on your device remains until you delete the App or reset the data.
-- Crash diagnostics may be retained by Firebase Crashlytics for up to **90 days**.
-- Aggregated analytics data is retained according to **Google Analytics retention policies**.
-- Ad-related event data is retained according to **Google advertising data policies**.
-- The Apple authentication identifier and any developer-stored configuration data persist until the user deletes their account within the App or revokes account access. Once account deletion is requested, this data is removed from developer-controlled systems within a reasonable operational period.
+- Local nutrition data remains on your device until deleted  
+- Email/account data persists until account deletion  
+- Crash data retained up to 90 days  
+- Analytics retained per Google policies  
 
 ---
 
 # 6. Children's Privacy
 
-Nutrition Mate is **not directed to children under 13**.
-
-We do not knowingly collect personal information from children. If you believe a child has used the App and provided information, please contact us so that we can address the issue.
+Not directed to children under 13.
 
 ---
 
 # 7. Security
 
-We implement industry-standard safeguards including:
+We implement:
 
-- Secure on-device storage for nutrition data  
-- Encrypted communications with Firebase services (HTTPS/TLS)  
-- Minimal data collection principles  
-- No storage of nutrition data on developer servers  
-
-However, no method of electronic storage or transmission is completely secure.
+- Secure authentication (password hashing via provider)  
+- Encrypted communications (HTTPS/TLS)  
+- Minimal data collection  
 
 ---
 
@@ -261,29 +244,23 @@ However, no method of electronic storage or transmission is completely secure.
 
 You may:
 
-- Disable analytics within the App settings  
-- Delete the App to remove locally stored data  
-- Delete your account within the App to remove the Apple authentication identifier and any minimal app configuration data stored by the developer  
-- Contact us with privacy-related questions  
-
-Because nutrition data is stored locally on your device and not on developer servers, deleting the App will remove this data.
+- Disable analytics  
+- Delete the App to remove local data  
+- Delete your account within the App to remove email and authentication data  
+- Request account-related assistance  
 
 ---
 
 # 9. Changes to This Policy
 
-We may update this Privacy Policy from time to time. Updates will be posted to this publicly accessible page and reflected by the updated "Effective Date."
-
-Continued use of the App after updates constitutes acceptance of the revised policy.
+We may update this policy. Continued use = acceptance.
 
 ---
 
 # 10. Contact Information
 
-For privacy-related inquiries, please contact:
-
-**CG Software Solutions LLC**  
-Email: info@cgsoftwaresolutions.org
+CG Software Solutions LLC  
+Email: info@cgsoftwaresolutions.org  
 
 ---
 
